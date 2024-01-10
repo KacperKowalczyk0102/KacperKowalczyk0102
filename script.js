@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch and display blog posts dynamically (You can replace this with your actual blog data)
     const blogPosts = [
-        { title: 'First Post', content: 'This is my first blog post.' },
-        { title: 'Second Post', content: 'Another blog post to share my thoughts.' }
+        { title: 'Pierwszy post', content: 'Hej, jestem studentem 3 roku Informatyki Stosowanej na uczelni Ekonimicznej w Krakowie.' },
+        { title: 'Drugi post', content: 'Hej to znowu ja, przygotowuję tą strone hobbistycznie, uczę się nowych rzeczy, testuje, jest to moja lekka odskocznia gdzie mogę zrobić coś dla siebie.' }
     ];
 
     const blogPostsContainer = document.getElementById('blog-posts');
@@ -13,11 +13,4 @@ document.addEventListener('DOMContentLoaded', function () {
         blogPostsContainer.appendChild(postElement);
     });
 
-    // Handle form submission
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        // You can add code here to handle the form submission (e.g., send data to a server)
-        alert('Form submitted! (This is just a placeholder)');
-    });
 });
