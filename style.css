@@ -12,6 +12,19 @@ body {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    /*stworzenie przyciemnienia wokół calego body*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
 }
 
 header {
@@ -50,7 +63,7 @@ nav a {
 }
 
 section {
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     text-align: center;
     color: white;
@@ -59,10 +72,21 @@ section {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px; /* Dostosuj rozmiar czcionki według potrzeb */
+}
 h2 {
     color: #333;
     font-family: 'Times New Roman', serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    color: #969595;
+    font-family: 'Times New Roman', serif;
+    font-size: 26px; /* Dostosuj rozmiar czcionki według potrzeb */
+    text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Dodaj cień wokół każdej litery */
+    display: inline-block; /* Zapewnia, że cień otacza tekst */
 }
 
 #blog-posts {

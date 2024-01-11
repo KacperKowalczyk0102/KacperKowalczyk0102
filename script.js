@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch and display blog posts dynamically (You can replace this with your actual blog data)
     const blogPosts = [
-        { title: 'Pierwszy post', content: 'Hej, jestem studentem 3 roku Informatyki Stosowanej na uczelni Ekonimicznej w Krakowie.' },
-        { title: 'Drugi post', content: 'Hej to znowu ja, przygotowuję tą strone hobbistycznie, uczę się nowych rzeczy, testuje, jest to moja lekka odskocznia gdzie mogę zrobić coś dla siebie.' }
+        { title: 'Wpis #1', content: 'Jestem studentem 3 roku Informatyki Stosowanej na uczelni Ekonimicznej w Krakowie.' },
+        { title: 'Wpis #2', content: 'Co dalej? A więc przygotowuję tą strone hobbistycznie, uczę się nowych rzeczy, testuję, jest to moja lekka odskocznia, gdzie mogę zrobić coś dla siebie.' }
     ];
 
     const blogPostsContainer = document.getElementById('blog-posts');
